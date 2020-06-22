@@ -1,0 +1,15 @@
+@media (max-width: 768px) {
+
+    .wrapper {
+        font-size: calc(14px + 0.15625vw);
+    }
+
+    .header-top__hamburger {
+        display: block;
+    }
+
+    .header-top__nav {
+        display: none;
+    }
+
+}

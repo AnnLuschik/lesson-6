@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-flow: wrap column;
+    align-items: center;
+    margin: 0 auto;
+}
+.wrapper {
+    max-width: 1280px;
+    font-size: calc(12px + 0.15625vw);                  /*1em = 14px при ширине 1280px*/
+    font-family: Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+section {
+    display: flex;
+    flex-flow: wrap column;
+    align-items: center;
+}
+/*Header styles
+==========================================================*/
+.header-top {
+    position: sticky;
+    top: 0;
+    z-index: 25;
+
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+    align-items: center;
+    background: #70BAC3;
+}
+.header-top__name {
+    padding: 2em 0;
+}
+.header-top__name > a {
+    font-size: 2.85714em;
+    font-family: 'Cherry Swash', cursive;
+    color: #ffffff;
+}
+.header-top__name > a:hover {
+    color: #06f7a6;
+}
+.header-top__nav {
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 35.35714em;
+    padding: 2.85714em 0 2.285714em;
+
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.header-top__nav > a {
+    position: relative;
+    font-size: 1.285714em;
+    color: #ffffff;  
+}
+.header-top__nav > a:hover {
+    color: #06f7a6;  
+}
+.header-top__nav > a:not(:last-child):after {
+    content: '/';
+    position: absolute;
+    right: -1.22em;
+}
+.header-top__hamburger {
+    position: relative;
+    display: none;
+    width: 3em;
+    height: 0.4em;
+    background: #ffffff;
+}
+.header-top__hamburger:before {
+    content: '';
+    position: absolute;
+    top: -1em;
+    width: 3em;
+    height: 0.4em;
+    background: #ffffff;
+}
+.header-top__hamburger:after {
+    content: '';
+    position: absolute;
+    top: 1em;
+    width: 3em;
+    height: 0.4em;
+    background: #ffffff;
+}
+.custom-header {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 9.214285714em 29vw 2.28571em 29vw;
+    background: url(../img/header-background.jpeg) no-repeat 50% 10% / cover;
+}
+.custom-header  > h2 {
+    flex-flow: wrap;
+    align-items: center;
+    padding-bottom: 1.0454em;
+
+    font-weight: 700;
+    font-size: 3.142857em;
+    text-align: center;
+    color: #E4E4E4;
+    text-transform: uppercase;    
+}
+.custom-header  > button {
+    padding: 0.17em 1.3em 0.23em 1.53em;
+    
+    font-weight: 300;
+    font-size: 2.14285714em;
+    color: #ffffff;
+
+    background: transparent;
+    border: 0.1em solid #ffffff;
+    border-radius: 0.17em;
+}
+.custom-header  > button:hover {
+    color: #06f7a6;
+    cursor: pointer;
+}
+.custom-header__list {
+    display: flex;
+    justify-content: space-between;
+    width: 6.285714em;
+    padding-top: 8.42857em;
+    list-style: none;
+}
+.custom-header__list > li {
+    width: 0.642857em;
+    height: 0.642857em;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+.custom-header__list > li:nth-child(3) {
+    background-color: #69728C;
+}
+/*Main styles
+==========================================================*/
+/*----------About----------*/
+.about {
+    padding: 6em 16.75vw 5.7857em 16vw;
+    text-align: center;   
+    background-color: #ffffff; 
+}
+.about > h3 {
+    padding: 0 8.3vw 1.3em 9.1vw;
+    font-weight: 400;
+    font-size: 2.1428571em;
+    line-height: 1.5;
+    color: #4C505D;
+}
+.about > p {
+    padding-bottom: 5em;
+    font-weight: 400;
+    font-size: 1em;
+    color: #4C505D;    
+}
+.about__img {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+    width: 100%;
+    padding: 0 12vw;
+}
+/*----------Portfolio----------*/
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 6.928571em 14vw 6.71428571em 16.5vw;
+    background: #00D089;
+}
+.portfolio__author {
+    display: flex;
+    padding-bottom: 4.285714em;
+}
+.portfolio__author > img {
+    width: 9.6428571em;
+    height: 9.6428571em;
+    margin-right: 2.7142857em;
+
+    border-radius: 50%;
+    object-fit: none;
+    object-position: center top;
+    overflow: hidden;
+}
+.portfolio-author__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.portfolio-author__main > p {
+    position: relative;
+
+    flex-wrap: wrap;
+    padding-bottom: 0.57692em;
+
+    font-weight: 700;
+    font-size: 1.857142em;  /*---26px при ширине по умолчанию---*/
+    color: #E4E4E4;
+    text-transform: uppercase;
+}
+.portfolio-author__main > p:after {
+    content: '”';
+    position: absolute;
+    top: -0.09em;
+    right: -0.11em;
+
+    font-weight: 700;
+    font-size: 12.5384em;  
+    opacity: 0.2;
+}
+.portfolio__main {
+    font-weight: 300;
+    font-size: 1.285714em;
+    line-height: 1.7;
+    text-align: left;
+    color: #ffffff;
+}
+/*----------Contact----------*/
+.contact {
+    display: flex;
+    justify-content: center;
+    padding: 3.71428571em 0;
+    background: url(../img/map.jpeg) no-repeat center bottom / cover;
+}
+.contact__circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 30.785714em;
+    height: 30.785714em;
+    padding: 8em 0 3.2142857em;
+
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    border: 1px solid #E3E3E3;
+    opacity: 0.8509803921568627;
+}
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact__form > input {
+    width: 19.7142857em;
+    margin-bottom: 1em;
+    
+    font-weight: 300;
+    font-size: 1em;
+    color: #4C505D;
+
+    border: 1px solid rgba(76, 80, 93, 0.5);
+    opacity: 0.5019607843137255;
+}
+.contact-form__name {
+    padding: 0.5em 0 0.5em 1em;
+}
+.contact-form__email {
+    padding: 0.5em 0 0.5em 1em;
+}
+.contact__form > textarea {
+    width: 19.7142857em;
+    padding: 0.85714em 0 2.4285714em 1em;
+
+    font-weight: 300;
+    font-size: 1em;
+    font-family: Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    color: #4C505D;
+
+    border: 1px solid rgba(76, 80, 93, 0.5);
+    opacity: 0.5019607843137255;
+    resize: none;
+}
+.contact__form > button {
+    width: 67px;
+    height: 67px;
+    margin-top: 2.21428em;
+
+    background-color: transparent;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+/*Footer styles
+==========================================================*/
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #00D089;
+}
+.footer__text {
+    padding: 0.9285714em 0 1.14285714em;
+    font-size: 1em;
+    font-stretch: condensed;
+    text-transform: uppercase;
+}
