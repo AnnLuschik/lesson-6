@@ -136,8 +136,10 @@ section {
 .custom-header__list > li {
     width: 0.642857em;
     height: 0.642857em;
+    
     border-radius: 50%;
     background-color: #ffffff;
+    cursor: pointer;
 }
 .custom-header__list > li:nth-child(3) {
     background-color: #69728C;
