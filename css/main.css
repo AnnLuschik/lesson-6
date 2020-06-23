@@ -166,11 +166,14 @@ section {
     color: #4C505D;    
 }
 .about__img {
-    display: flex;
-    justify-content: space-around;
-    flex-flow: wrap;
     width: 100%;
     padding: 0 12vw;
+}
+.about__img > ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    list-style: none;
 }
 /*----------Portfolio----------*/
 .portfolio {
