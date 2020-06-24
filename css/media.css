@@ -4,6 +4,12 @@
         font-size: calc(14px + 0.15625vw);
     }
 
+    .container,
+    .container--row {
+        width: 90%;
+        margin: 0 auto;
+    }
+
     .header-top__hamburger {
         display: block;
     }
@@ -12,4 +18,18 @@
         display: none;
     }
 
+    .contact__circle {
+        padding: 6em 0 3em;
+    }
+
+    .contact__form > input {
+        width: 14em;
+        margin-bottom: 0.5em;
+        font-size: 1.5em;
+    }
+
+    .contact__form > textarea {
+        width: 14em;
+        font-size: 1.5em;
+    } 
 }
