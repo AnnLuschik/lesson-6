@@ -124,10 +124,10 @@ section {
 }
 .custom-header h2 {
     align-items: center;
-    padding: 0 86px 1.05em 86px;
+    padding: 0 0.07vw 1.05em;
 
     font-weight: 700;
-    font-size: 3.25em;
+    font-size: 3.15em;
     text-align: center;
     color: #E4E4E4;
     text-transform: uppercase;    
@@ -169,7 +169,7 @@ section {
 ==========================================================*/
 /*----------About----------*/
 .about {
-    padding: 6em 0 5.7857em;
+    padding: 6em 0 5.8em;
     text-align: center;   
     background-color: #ffffff; 
 }
@@ -201,17 +201,17 @@ section {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    padding: 6.928571em 0 6.71428571em 0;
+    padding: 6.9em 0 6.7em 0;
     background: #00D089;
 }
 .portfolio__author {
     display: flex;
-    padding-bottom: 4.285714em;
+    padding-bottom: 4.3em;
 }
 .portfolio__author img {
-    width: 9.6428571em;
-    height: 9.6428571em;
-    margin-right: 2.7142857em;
+    width: 9.6em;
+    height: 9.6em;
+    margin-right: 2.7em;
 
     border-radius: 50%;
     object-fit: none;
@@ -228,7 +228,7 @@ section {
     padding-bottom: 0.6em;
 
     font-weight: 700;
-    font-size: 1.857142em;  /*---26px при ширине по умолчанию---*/
+    font-size: 1.9em;  /*---26px при ширине по умолчанию---*/
     color: #E4E4E4;
     text-transform: uppercase;
 }
@@ -237,7 +237,7 @@ section {
     position: absolute;
     top: -0.07em;
     left: -0.07em;
-    
+
     font-weight: 700;
     font-size: 350px;  
     opacity: 0.2;
@@ -261,8 +261,8 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 30.785714em;
-    height: 30.785714em;
+    width: 30.8em;
+    height: 30.8em;
     padding: 8em 0 3.2em;
 
     background-color: #FFFFFF;
@@ -276,7 +276,7 @@ section {
     align-items: center;
 }
 .contact__form > input {
-    width: 19.7142857em;
+    width: 19.7em;
     margin-bottom: 1em;
     
     font-weight: 300;
@@ -293,8 +293,8 @@ section {
     padding: 0.5em 0 0.5em 1em;
 }
 .contact__form > textarea {
-    width: 19.7142857em;
-    padding: 0.85714em 0 2.4285714em 1em;
+    width: 19.7em;
+    padding: 0.85em 0 2.4em 1em;
 
     font-weight: 300;
     font-size: 1em;
