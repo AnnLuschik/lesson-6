@@ -124,10 +124,10 @@ section {
 }
 .custom-header h2 {
     align-items: center;
-    padding: 0 0.07vw 1.05em;
+    padding: 0 2em 1.05em;
 
     font-weight: 700;
-    font-size: 3.15em;
+    font-size: 3.2em;
     text-align: center;
     color: #E4E4E4;
     text-transform: uppercase;    
