@@ -1,6 +1,8 @@
 /*Common styles
 ==========================================================*/
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -223,9 +225,7 @@ section {
 }
 .portfolio-author__main p {
     position: relative;
-
-    flex-wrap: wrap;
-    padding-bottom: 0.57692em;
+    padding-bottom: 0.6em;
 
     font-weight: 700;
     font-size: 1.857142em;  /*---26px при ширине по умолчанию---*/
@@ -235,16 +235,16 @@ section {
 .portfolio-author__main > p:after {
     content: '”';
     position: absolute;
-    top: -0.09em;
-    right: -0.11em;
-
+    top: -0.07em;
+    left: -0.07em;
+    
     font-weight: 700;
-    font-size: 12.5384em;  
+    font-size: 350px;  
     opacity: 0.2;
 }
 .portfolio__main {
     font-weight: 300;
-    font-size: 1.285714em;
+    font-size: 1.3em;
     line-height: 1.7;
     text-align: justify;
     color: #ffffff;
@@ -253,7 +253,7 @@ section {
 .contact {
     display: flex;
     justify-content: center;
-    padding: 3.71428571em 0;
+    padding: 3.7em 0;
     background: url(../img/map.jpeg) no-repeat center bottom / cover;
 }
 .contact__circle {
@@ -302,7 +302,7 @@ section {
     color: #4C505D;
 
     border: 1px solid rgba(76, 80, 93, 0.5);
-    opacity: 0.5019607843137255;
+    opacity: 0.5;
     resize: none;
 }
 .contact-form__btn {
