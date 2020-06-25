@@ -12,7 +12,7 @@ html {
 }
 body {
     display: flex;
-    flex-flow: wrap column;
+    flex-direction: column;
     align-items: center;
     margin: 0 auto;
 }
@@ -42,7 +42,7 @@ a {
 }
 section {
     display: flex;
-    flex-flow: wrap column;
+    flex-direction: column;
     align-items: center;
 }
 /*Header styles
@@ -59,7 +59,6 @@ section {
 .header-top__name > a {
     font-size: 2.95em;
     font-family: 'Cherry Swash', cursive;
-    vertical-align: baseline;
     color: #ffffff;
     border: 0;
 }
@@ -174,7 +173,7 @@ section {
     background-color: #ffffff; 
 }
 .about h3 {
-    padding: 0 5% 1.3em 5%;
+    padding: 0 11vw 1.3em;
     font-weight: 400;
     font-size: 2.15em;
     color: #4C505D;
@@ -191,7 +190,6 @@ section {
 }
 .about__img > ul{
     display: flex;
-    flex-flow: row wrap;
     justify-content: space-around;
     list-style: none;
 }
@@ -199,7 +197,6 @@ section {
 .portfolio {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
     padding: 6.9em 0 6.7em 0;
     background: #00D089;
@@ -351,7 +348,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     background: #00D089;
 }
 .footer__text {
