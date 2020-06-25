@@ -232,11 +232,13 @@ section {
 .portfolio-author__main > p:after {
     content: '”';
     position: absolute;
-    top: -0.07em;
+    top: 0.35em;
     left: -0.07em;
 
     font-weight: 700;
     font-size: 350px;  
+    line-height: 100px;
+    vertical-align: 0ex;
     opacity: 0.2;
 }
 .portfolio__main {
